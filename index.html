@@ -25,10 +25,10 @@ body {
 
 .test2 {
     background-color: #f8f9fa;
-    width: 300px;         /* убрал пробел: 300px */
+    width: 300px;         
     border-radius: 10px;
     padding: 30px;
-    text-align: center;   /* исправил text-aling → text-align */
+    text-align: center;   
 }
 
 .test2 img {
@@ -52,10 +52,17 @@ nav ul {
       font-weight: bold;
     }
 
-@media (max-width: 600px ) {
+@media (max-width: 600px) {
+
     .container {
-        max-width: 300px
+        justify-content: center;
     }
+
+    .test2 {
+        width: 100%;
+        max-width: 300px;
+    }
+}
     
 </style>
 </head>
@@ -219,4 +226,5 @@ nav ul {
 </body>
 
 </html>
+
 
