@@ -53,6 +53,14 @@ nav ul {
       font-weight: bold;
     }
 
+nav a.active {
+    text-decoration: underline;
+}
+
+ul.idk {
+list-style: none;
+}
+
 @media (max-width: 600px) {
 
     .container {
@@ -70,7 +78,29 @@ nav ul {
 
 <body>
 
-<h3 align="center">Персональные компьютеры</h3>
+<nav>
+        <ul class="nav">
+            <li><a href="главная.html">Главная</a></li>
+            <li><a href="тестовый тест22.2.html" class="active">Каталог</a></li>
+            <li><a href="заказ.html">Сделать заказ</a></li>
+        </ul>
+    </nav>
+
+<ul class="idk" align="center">
+<li>
+<a href="#head" target="_self"> Наушники </a>
+</li>
+</ul>
+
+<ul class="idk" align="center">
+<li>
+<a href="#cd" target="_self" align="center"> Диски </a>
+</li>
+</ul>
+
+<h3 align="center">
+<a id="pc">Персональные компьютеры</a>
+</h3>
 <div class="container">
 <div class="test2">
 <img src="computer1.jpg">
@@ -154,7 +184,9 @@ nav ul {
 </div>
 </div>
 
-<h3 align="center">Наушники</h3>
+<h3 align="center">
+<a id="head">Наушники</a>
+</h3>
 
 <div class="container">
 <div class="test2">
@@ -199,7 +231,9 @@ nav ul {
 </div>
 </div>
 
-<h3 align="center">Диски</h3>
+<h3 align="center">
+<a id="cd">Диски</a>
+</h3>
 
 <div class="container">
 <div class="test2">
@@ -225,11 +259,4 @@ nav ul {
 </div>
 
 </body>
-
 </html>
-
-
-
-
-
-
