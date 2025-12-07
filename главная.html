@@ -4,55 +4,56 @@
     <title>Формы. Отправляем данные на сервер</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <style>
-
-body {
+        body {
             font-family: 'Press Start 2P', cursive;
             image-rendering: pixelated;
             -webkit-font-smoothing: none;
             -moz-osx-font-smoothing: grayscale;
-       
-.nav {
+            margin: 0;
+            padding: 10px;
+        }
+
+        .nav {
             list-style: none;
             display: flex;
             gap: 20px;
-            justify-content: center
+            justify-content: center;
         }
 
-nav ul {
-      display: flex;           
-      justify-content: center; 
-      list-style: none;        
-      padding: 0;
-      margin: 0;
-      gap: 20px;               
-    }
-
- nav a {
-      text-decoration: none;   
-      color: black;            
-      font-weight: bold;
-    }
-
-nav a.active {
-    text-decoration: underline;
-}
-
-@media (max-width: 600px) {
         nav ul {
-            flex-direction: column;
-            gap: 10px;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 20px;
         }
 
-        body {
-            padding: 5px;
-            font-size: 12px;
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
         }
-}
 
-</style>
+        nav a.active {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            body {
+                padding: 5px;
+                font-size: 12px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -71,9 +72,4 @@ nav a.active {
     </div>
 
 </body>
-
 </html>
-
-
-
-
