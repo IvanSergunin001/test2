@@ -17,55 +17,33 @@ body {
 
 .container {
     display: flex;
-    flex-wrap: wrap;      
-    justify-content: center;  
-    gap: 20px;            
-    max-width: 1200px;    
-    margin: 0 auto;       
+    flex-wrap: wrap;      /* перенос строк */
+    justify-content: center;  /* центрируем по горизонтали */
+    gap: 20px;            /* расстояние между блоками */
+    max-width: 1200px;    /* чтобы максимум 3 блока в ряд */
+    margin: 0 auto;       /* центрируем контейнер */
 }
 
 .test2 {
     background-color: #f8f9fa;
-    width: 300px;         
+    width: 300px;         /* убрал пробел: 300px */
     border-radius: 10px;
     padding: 30px;
-    text-align: center;   
+    text-align: center;   /* исправил text-aling → text-align */
 }
 
-.img-box {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 15px auto;
-    overflow: hidden;         
-    border-radius: 10px;
+.test2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-.img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    padding: 8px 15px;
-    background: #e0e0e0;
-    border-radius: 6px;
-    display: inline-block;
-}
-
-nav a:hover {
-    background: #c8c8c8;
-}
+ .nav {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center
+        }
 
 nav ul {
       display: flex;           
@@ -81,6 +59,10 @@ nav ul {
       color: black;            
       font-weight: bold;
     }
+
+nav a.active {
+    text-decoration: underline;
+}
 
 ul.idk {
     list-style: none;
@@ -125,104 +107,167 @@ ul.idk {
 <h3 align="center">
 <a id="pc">Персональные компьютеры</a>
 </h3>
+<div class="container">
+<div class="test2">
+<img src="computer1.jpg">
+<h3>Персональный компьютер</h3>
+<p>Цена:1000 монет</p>
+<nav>
+<ul>
+<li><a href="file:///C:/Users/name/Desktop/%D1%82%D0%B5%D1%81%D1%82/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7.html">Купить</a><li>
+<li><a href="заказ.html">Купить</a><li>
+</ul>
+<nav>
+</div>
+<div class="test2">
+<img src="computer2.jpg">
+<h3>Персональный компьютер</h3>
+<p>Цена:1000 монет</p>
+<nav>
+<ul>
+<li><a href="file:///C:/Users/name/Desktop/%D1%82%D0%B5%D1%81%D1%82/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7.html">Купить</a><li>
+</ul>
+<nav>
+</div>
+<div class="test2">
+<img src="computer3.jpg">
+<h3>Персональный компьютер</h3>
+<p>Цена:1000 монет</p>
+<nav>
+<ul>
+<li><a href="file:///C:/Users/name/Desktop/%D1%82%D0%B5%D1%81%D1%82/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7.html">Купить</a><li>
+</ul>
+<nav>
+</div>
+<div class="test2">
+<img src="computer4.jpg">
+<h3>Персональный компьютер</h3>
+<p>Цена:1000 монет</p>
+<nav>
+<ul>
+<li><a href="file:///C:/Users/name/Desktop/%D1%82%D0%B5%D1%81%D1%82/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7.html">Купить</a><li>
+</ul>
+<nav>
+</div>
+<div class="test2">
+<img src="computer5.jpg">
+<h3>Персональный компьютер</h3>
+<p>Цена:1000 монет</p>
+<nav>
+<ul>
+<li><a href="file:///C:/Users/name/Desktop/%D1%82%D0%B5%D1%81%D1%82/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7.html">Купить</a><li>
+</ul>
+<nav>
+</div>
+<div class="test2">
+<img src="computer6.jpg">
+<h3>Персональный компьютер</h3>
+<p>Цена:1000 монет</p>
+<nav>
+<ul>
+<li><a href="file:///C:/Users/name/Desktop/%D1%82%D0%B5%D1%81%D1%82/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7.html">Купить</a><li>
+</ul>
+<nav>
+</div>
+<div class="test2">
+<img src="computer7.jpg">
+<h3>Персональный компьютер</h3>
+<p>Цена:1000 монет</p>
+<nav>
+<ul>
+<li><a href="file:///C:/Users/name/Desktop/%D1%82%D0%B5%D1%81%D1%82/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7.html">Купить</a><li>
+</ul>
+<nav>
+</div>
+<div class="test2">
+<img src="computer8.jpg">
+<h3>Персональный компьютер</h3>
+<p>Цена:1000 монет</p>
+<nav>
+<ul>
+<li><a href="file:///C:/Users/name/Desktop/%D1%82%D0%B5%D1%81%D1%82/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7.html">Купить</a><li>
+</ul>
+<nav>
+</div>
+</div>
+
+<h3 align="center">
+<a id="head">Наушники</a>
+</h3>
 
 <div class="container">
-
 <div class="test2">
-    <div class="img-box">
-        <img src="computer1.jpg">
-    </div>
-    <h3>Персональный компьютер</h3>
-    <p>Цена: 1000 монет</p>
-    <nav>
-        <ul>
-            <li><a href="#">Купить</a></li>
-        </ul>
-    </nav>
+<img src="headphones1.jpg">
+<h3>Наушники</h3>
+<p>Цена:1000 монет</p>
+<nav>
+<ul>
+<li><a href="file:///C:/Users/name/Desktop/%D1%82%D0%B5%D1%81%D1%82/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7.html">Купить</a><li>
+</ul>
+<nav>
 </div>
-
 <div class="test2">
-    <div class="img-box">
-        <img src="computer2.jpg">
-    </div>
-    <h3>Персональный компьютер</h3>
-    <p>Цена: 1000 монет</p>
-    <nav>
-        <ul>
-            <li><a href="#">Купить</a></li>
-        </ul>
-    </nav>
+<img src="headphones2.jpg">
+<h3>Наушники</h3>
+<p>Цена:1000 монет</p>
+<nav>
+<ul>
+<li><a href="file:///C:/Users/name/Desktop/%D1%82%D0%B5%D1%81%D1%82/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7.html">Купить</a><li>
+</ul>
+<nav>
 </div>
-
 <div class="test2">
-    <div class="img-box">
-        <img src="computer3.jpg">
-    </div>
-    <h3>Персональный компьютер</h3>
-    <p>Цена: 1000 монет</p>
-    <nav>
-        <ul>
-            <li><a href="#">Купить</a></li>
-        </ul>
-    </nav>
+<img src="headphones3.jpg">
+<h3>Наушники</h3>
+<p>Цена:1000 монет</p>
+<nav>
+<ul>
+<li><a href="file:///C:/Users/name/Desktop/%D1%82%D0%B5%D1%81%D1%82/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7.html">Купить</a><li>
+</ul>
+<nav>
 </div>
-
 <div class="test2">
-    <div class="img-box">
-        <img src="computer4.jpg">
-    </div>
-    <h3>Персональный компьютер</h3>
-    <p>Цена: 1000 монет</p>
-    <nav>
-        <ul>
-            <li><a href="#">Купить</a></li>
-        </ul>
-    </nav>
+<img src="headphones4.jpg">
+<h3>Наушники</h3>
+<p>Цена:1000 монет</p>
+<nav>
+<ul>
+<li><a href="file:///C:/Users/name/Desktop/%D1%82%D0%B5%D1%81%D1%82/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7.html">Купить</a><li>
+</ul>
+<nav>
+</div>
 </div>
 
-</div>
-
-
-<h3 align="center">Диски</h3>
+<h3 align="center">
+<a id="cd">Диски</a>
+</h3>
 
 <div class="container">
-
 <div class="test2">
-    <div class="img-box">
-        <img src="bird.jpg">
-    </div>
-    <h3>CD-диск</h3>
-    <p>Цена: 1000 монет</p>
+<img src="bird.jpg">
+<h3>CD-диск</h3>
+<p>Цена:1000 монет</p>
 </div>
-
 <div class="test2">
-    <div class="img-box">
-        <img src="bird.jpg">
-    </div>
-    <h3>CD-диск</h3>
-    <p>Цена: 1000 монет</p>
+<img src="bird.jpg">
+<h3>CD-диск</h3>
+<p>Цена:1000 монет</p>
 </div>
-
 <div class="test2">
-    <div class="img-box">
-        <img src="bird.jpg">
-    </div>
-    <h3>CD-диск</h3>
-    <p>Цена: 1000 монет</p>
+<img src="bird.jpg">
+<h3>CD-диск</h3>
+<p>Цена:1000 монет</p>
 </div>
-
 <div class="test2">
-    <div class="img-box">
-        <img src="bird.jpg">
-    </div>
-    <h3>CD-диск</h3>
-    <p>Цена: 1000 монет</p>
+<img src="bird.jpg">
+<h3>CD-диск</h3>
+<p>Цена:1000 монет</p>
 </div>
-
 </div>
 
 </body>
 </html>
+
 
 
 
