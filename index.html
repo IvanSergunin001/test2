@@ -32,32 +32,40 @@ body {
     text-align: center;   
 }
 
-.test2 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
 .img-box {
     width: 200px;
     height: 200px;
     margin: 0 auto 15px auto;
-    overflow: hidden;          /* обрезает лишнее */
+    overflow: hidden;         
     border-radius: 10px;
 }
 
-/* Сама картинка — всегда одного размера */
 .img-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 
- .nav {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-            justify-content: center
-        }
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+    background: #e0e0e0;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #c8c8c8;
+}
 
 nav ul {
       display: flex;           
@@ -73,10 +81,6 @@ nav ul {
       color: black;            
       font-weight: bold;
     }
-
-nav a.active {
-    text-decoration: underline;
-}
 
 ul.idk {
     list-style: none;
@@ -219,6 +223,7 @@ ul.idk {
 
 </body>
 </html>
+
 
 
 
